@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "ALL",
+        name: "/help ",
         // Activity type number (0 = Playing).
-        type: 4 "Da hood", 
+        type: 3, 
       },
     ],
   },
@@ -56,9 +56,9 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+      { question: "Cual es tu nombre?", required: true },
+      { question: "Cuantos años tienes?", required: true },
+      { question: "Por qué quieres unirte?", required: true },
     ],
 
     // Embed colors by application status.
@@ -69,7 +69,7 @@ export const botConfig = {
     },
 
     // How long users must wait before submitting another application (hours).
-    applicationCooldown: 24, 
+    applicationCooldown: 1, 
 
     // Auto-delete denied applications after this many days.
     deleteDeniedAfter: 7, 
@@ -255,7 +255,7 @@ export const botConfig = {
 
     // Allowed winner count range.
     minimumWinners: 1,
-    maximumWinners: 10,
+    maximumWinners: 100,
 
     // Allowed giveaway duration range in milliseconds.
     // 300000 = 5 minutes.
@@ -289,10 +289,10 @@ export const botConfig = {
   // =========================
   verification: {
     // Message shown when posting the verification panel.
-    defaultMessage: "Click the button below to verify yourself and gain access to the server!",
+    defaultMessage: "¡Haz clic en el botón de abajo para verificar tu identidad y acceder al servidor!",
 
     // Text on the verification button.
-    defaultButtonText: "Verify",
+    defaultButtonText: "Verificar",
 
     // Automatic verification behavior.
     autoVerify: {
